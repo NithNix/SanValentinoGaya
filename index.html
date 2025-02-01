@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito per San Valentino</title>
-
-    <!-- Collegamento al file CSS (styles.css) nella stessa cartella -->
+    
+    <!-- Collegamento al file CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Benvenuto nel mio Sito di San Valentino</h1>
-        <p>Ho creato questo sito speciale per te, Gaya!</p>
+        <h1>Benvenuto nel mio sito speciale, Gaya!</h1>
+        <p>Ti ho preparato qualcosa di speciale per te! ❤️</p>
     </header>
 
-    <!-- Contenuto interattivo (come un puzzle o una domanda) -->
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="image1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image3.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Puzzle/Quiz -->
     <div class="puzzle">
-        <p>Vuoi essere il mio San Valentino?</p>
-        <input type="text" id="answer" placeholder="Scrivi Sì o No">
+        <h2>Voglio sapere, Gaya... Vuoi essere il mio San Valentino?</h2>
+        <p>Scrivi la risposta giusta!</p>
+        <input type="text" id="answer" placeholder="Scrivi 'Sì' o 'No'">
         <button onclick="checkAnswer()">Invia</button>
         <p id="response"></p>
     </div>
 
-    <!-- Collegamento al file JavaScript (scripts.js) nella stessa cartella -->
+    <!-- Collegamento al file JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
