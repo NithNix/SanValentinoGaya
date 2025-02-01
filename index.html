@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Ciao Gaya,</h1>
+    <p>Da 7 mesi rendi la mia vita più bella. ❤️</p>
+    <p>Ho una domanda speciale per te...</p>
+    <button id="startPuzzle">Clicca per continuare</button>
+
+    <div id="countdown"></div>
+    <div class="slideshow hidden">
+        <img id="slideshowImg" src="https://i.imgur.com/yourimage1.jpg" alt="Our Memory">
+    </div>
+
+    <div id="puzzleSection" class="hidden">
+        <h2>Un piccolo enigma per te:</h2>
+        <p><b>"L’amore è come una ______, cresce se lo coltivi."</b></p>
+        <input type="text" id="puzzleAnswer" placeholder="Scrivi la risposta...">
+        <button onclick="checkAnswer()">Invia</button>
+        <p id="feedback"></p>
+    </div>
+
+    <div id="finalMessage" class="hidden">
+        <h2>Vuoi essere la mia Valentina? ❤️</h2>
+        <button onclick="yesResponse()">Sì!</button>
+        <button onclick="wrongAnswer()">No...</button>
+    </div>
+
+    <div id="loveLetter" class="hidden">
+        <p id="loveText"></p>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+</div>
