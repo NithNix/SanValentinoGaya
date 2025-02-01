@@ -1,31 +1,28 @@
-<div class="container">
-    <h1>Ciao Gaya,</h1>
-    <p>Da 7 mesi rendi la mia vita più bella. ❤️</p>
-    <p>Ho una domanda speciale per te...</p>
-    <button id="startPuzzle">Clicca per continuare</button>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito per San Valentino</title>
 
-    <div id="countdown"></div>
-    <div class="slideshow hidden">
-        <img id="slideshowImg" src="https://i.imgur.com/yourimage1.jpg" alt="Our Memory">
-    </div>
+    <!-- Collegamento al file CSS (styles.css) nella stessa cartella -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nel mio Sito di San Valentino</h1>
+        <p>Ho creato questo sito speciale per te, Gaya!</p>
+    </header>
 
-    <div id="puzzleSection" class="hidden">
-        <h2>Un piccolo enigma per te:</h2>
-        <p><b>"L’amore è come una ______, cresce se lo coltivi."</b></p>
-        <input type="text" id="puzzleAnswer" placeholder="Scrivi la risposta...">
+    <!-- Contenuto interattivo (come un puzzle o una domanda) -->
+    <div class="puzzle">
+        <p>Vuoi essere il mio San Valentino?</p>
+        <input type="text" id="answer" placeholder="Scrivi Sì o No">
         <button onclick="checkAnswer()">Invia</button>
-        <p id="feedback"></p>
+        <p id="response"></p>
     </div>
 
-    <div id="finalMessage" class="hidden">
-        <h2>Vuoi essere la mia Valentina? ❤️</h2>
-        <button onclick="yesResponse()">Sì!</button>
-        <button onclick="wrongAnswer()">No...</button>
-    </div>
-
-    <div id="loveLetter" class="hidden">
-        <p id="loveText"></p>
-    </div>
-
-    <canvas id="confettiCanvas"></canvas>
-</div>
+    <!-- Collegamento al file JavaScript (scripts.js) nella stessa cartella -->
+    <script src="scripts.js"></script>
+</body>
+</html>
