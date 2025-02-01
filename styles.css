@@ -1,24 +1,42 @@
 /* Stili generali */
 body {
-    background-color: #f4f4f9;  /* Colore di sfondo chiaro */
-    color: #333;                /* Testo scuro */
+    background-color: #f4f4f9;
+    color: #333;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Stile per l'intestazione */
+/* Header */
 header {
-    background-color: #FF6347; /* Colore Tomate */
+    background-color: #FF6347;
     padding: 20px;
 }
 
 h1 {
-    color: white;  /* Testo bianco per il titolo */
+    color: white;
 }
 
-/* Stile per il contenuto principale (puzzle) */
+/* Slideshow */
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Puzzle Section */
 .puzzle {
     margin-top: 50px;
 }
@@ -41,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff4500; /* Colore più scuro al passaggio del mouse */
+    background-color: #ff4500;
 }
 
 #response {
