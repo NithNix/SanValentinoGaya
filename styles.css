@@ -1,100 +1,51 @@
+/* Stili generali */
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;  /* Colore di sfondo chiaro */
+    color: #333;                /* Testo scuro */
+    font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ffccdc;
-    color: #333;
-    transition: 0.5s;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
+/* Stile per l'intestazione */
+header {
+    background-color: #FF6347; /* Colore Tomate */
+    padding: 20px;
+}
+
+h1 {
+    color: white;  /* Testo bianco per il titolo */
+}
+
+/* Stile per il contenuto principale (puzzle) */
+.puzzle {
     margin-top: 50px;
 }
 
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
 button {
-    background-color: #ff4d6d;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #FF6347;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #ff1a4b;
+    background-color: #ff4500; /* Colore più scuro al passaggio del mouse */
 }
 
-.hidden {
-    display: none;
-}
-
-.slideshow {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 20px auto;
-}
-
-.slideshow img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#countdown {
-    font-size: 20px;
+#response {
     margin-top: 20px;
-    font-weight: bold;
-}
-
-#loveLetter {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
     font-size: 18px;
     font-weight: bold;
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
-    .container {
-        margin-top: 20px;
-    }
-
-    .slideshow img {
-        width: 100%;
-        height: auto;
-    }
-
-    #countdown {
-        font-size: 18px;
-    }
-
-    #loveLetter {
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    button {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
 }
